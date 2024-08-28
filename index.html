@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/styles.css" rel="stylesheet" />
+    <title>Challenge</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/icons8.png" alt="controle de videogame" />
+      <h1>Encriptador de Texto!</h1>
+    </header>
+    <main>
+      <div class="container">
+        <textarea
+          class="TextoArea"
+          id="textoEntrada"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div class="spam">
+          <span>Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="botoes">
+          <button class="click" onclick="criptografar()">Criptografar</button>
+          <button class="clack" onclick="descriptografar()">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+
+      <div class="container2">
+        <img class="game" src="img/game.svg" alt="jogando" />
+        <textarea
+          class="mensagem"
+          id="textoSaida"
+          cols="20"
+          rows="11"
+          placeholder="Nenhuma mensagem encontrada."
+          readonly
+        ></textarea>
+        <button class="btn-Copiar" onclick="copiarTextoSaida()">Copiar</button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy; Desenvolvido por Thaís Paiva | 2024</p>
+    </footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
